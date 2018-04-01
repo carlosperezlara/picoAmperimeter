@@ -1,0 +1,4 @@
+all:
+	gcc -I/usr/local/include/libusb-1.0 -c pico.c 
+	gcc -L/usr/local/lib/ pico.o -lusb-1.0 -o pico
+	rm pico.o
